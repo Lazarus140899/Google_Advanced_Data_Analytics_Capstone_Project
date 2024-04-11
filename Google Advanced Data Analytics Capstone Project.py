@@ -433,8 +433,8 @@ df.info()
 
 # Plot a correlation heatmap
 plt.figure(figsize=(16, 9))
-subset_df = df[['satisfaction_level','last_evaluation','number_project','average_monthly_hours','tenure','work_accident','left','promotion_last_5years','department','salary']]
-heatmap = sns.heatmap(subset_df.corr(), vmin=-1, vmax=1, annot=True, cmap=sns.color_palette("vlag", as_cmap=True))
+#subset_df = df[['satisfaction_level','last_evaluation','number_project','average_monthly_hours','tenure','work_accident','left','promotion_last_5years','department','salary']]
+heatmap = sns.heatmap(df.corr(), vmin=-1, vmax=1, annot=True, cmap=sns.color_palette("vlag", as_cmap=True))
 heatmap.set_title('Correlation Heatmap', fontdict={'fontsize':14}, pad=12);
 
 
